@@ -1,0 +1,36 @@
+body {
+    background: linear-gradient(rgba(12, 80, 136, 0.438), rgba(12, 80, 136, 0.438)), url('https://www.seekpng.com/png/detail/22-227545_world-map-high-resolution-world-map-vector.png');
+    background-position: center;
+    background-size: cover;
+    background-color: white;
+    font-family: Open Sans,Gill Sans MT,Gill Sans,Corbel,Arial,sans-serif;
+}
+
+.register {
+    width: 40%;
+    padding: 15px 0 15px 0;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #CBD6E3;
+}
+.register-btn {
+    background-color: #3DA07B;
+    color: white;
+    width: 93%;
+}
+
+.navbar-brand {
+    font-size: 25px;
+}
+.nav-links {
+    font-size: 16px;
+    margin-left: auto;
+}
+a {
+    color: white !important;
+}
+
+.card {
+    background-color: #CBD6E3;
+    margin-top: 200px;
+}

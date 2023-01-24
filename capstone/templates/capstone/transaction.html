@@ -1,0 +1,28 @@
+{% extends "capstone/layout.html" %}
+
+{% block body %}
+    <div class="container">
+        <table class="table w-75 ml-auto mr-auto mt-5 text-center">
+            <thead class="thead-dark">
+                <tr>
+                    <th>Amount</th>
+                    <th>From</th>
+                    <th>To</th>
+                    <th>Total</th>
+                    <th>Date</th>
+                </tr>
+            </thead>
+            <tbody class="font-weight-bold">
+                {% for transaction in transactions %}
+                    <tr>
+                        <td>{{ transaction.amount|floatformat:2 }}</td>
+                        <td>{{ transaction.currancy_from }}</td>
+                        <td>{{ transaction.currancy_to }}</td>
+                        <td>${{ transaction.total|floatformat:2 }}</td>
+                        <td>{{ transaction.timestamp }}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+{% endblock %}
